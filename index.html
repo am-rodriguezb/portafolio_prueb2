@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Portafolio | Desarrollo Web Front-End</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/icono.png">
+    <!-- CSS -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body class="vh-100 ">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container">
+          <!-- Logo -->
+        <img src="./assets/img/icono-blanco.svg" alt="Logo">
+          
+          <!-- Toggle Btn -->
+        <button 
+          class="navbar-toggler shadow-none border-0" 
+          type="button" 
+          data-bs-toggle="offcanvas" 
+          data-bs-target="#offcanvasNavbar" 
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+          <!-- SideBar -->
+        <div 
+          class="sidebar offcanvas offcanvas-start" 
+          tabindex="-1" 
+          id="offcanvasNavbar" 
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+
+          <!-- SideBar Header -->
+          <div class="offcanvas-header text-white border-bottom">
+            <h5 class="offcanvas-title" 
+            id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button 
+              type="button" 
+              class="btn-close btn-close-white shadow-none" 
+              data-bs-dismiss="offcanvas" 
+              aria-label="Close">
+              </button>
+          </div>
+
+          <!-- SideBar Body -->
+          <div class="offcanvas-body d-flex flex-column flex-lg-end p-4 p-lg-0">
+            <ul 
+              class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3"
+            >
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#sobre-mi">Sobre mi</a>
+              </li>
+              <li class="nav-item mx-2">
+                  <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+              <li class="nav-item mx-2">
+                  <a class="nav-link" href="#proyectos">Proyectos</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="./assets/img/imagenes-desarrolladores/desarrollador-ejemplo.svg" alt="Foto de Jane Doe">
+        <h1>Hola, Soy Amaro Rodriguez </h1>
+        <h2>Desarrollo sitios web.</h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="./assets/img/hero-inferior.svg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenido-seccion">
+          <h2>Sobre Mí</h2>
+          <p><span>Hola, soy Amaro Rodriguez.</span> Tengo 21 años soy estudiante de Ingeniería en Informática. Me apasionan los videojuegos, las películas de ciencia ficción o de comedia, la música y el anime. En mi tiempo libre explorando la area de la robotica y electronica que me permitan tener mayor vista profesionalmente en el campo de la informática.</p>
+
+          <div class="fila">
+              <!-- datos personales -->
+              <div class="col">
+                  <h3>Datos Personales</h3>
+                  <ul>
+                      <li>
+                          <strong>Cumpleaños</strong>
+                          14-5-2003
+                      </li>
+                      <li>
+                          <strong>Teléfono</strong>
+                          9 34855040
+                      </li>
+                      <li>
+                          <strong>Email</strong>
+                          AmaroRodriguez@gmail.com
+                      </li>
+                      <li>
+                          <strong>Website</strong>
+                          www.example.com
+                      </li>
+                      <li>
+                          <strong>Dirección</strong>
+                          Puerto Montt
+                      </li>
+                      <li>
+                          <strong>Cargo</strong>
+                          <span>Analista de Logistica</span>
+                      </li>
+                  </ul>
+              </div>
+
+              <!-- intereses -->
+              <div class="col">
+                  <h3>Intereses</h3>
+                  <div class="contenedor-intereses">
+                      <div class="interes">
+                          <i class="fa-solid fa-gamepad"></i>
+                          <span>JUEGOS</span>
+                      </div>
+                      <div class="interes">
+                          <i class="fa-solid fa-headphones"></i>
+                          <span>MUSICA</span>
+                      </div>
+                      <div class="interes">
+                          <i class="fa-solid fa-d-and-d"></i>
+                          <span>ANIME</span>
+                      </div>
+                      <div class="interes">
+                          <i class="fa-brands fa-rebel"></i>
+                          <span>ROBOTICA</span>
+                      </div>
+                      
+                      
+                  </div>
+              </div>
+          </div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCV">
+              Descargar CV
+            </button>
+    </section>
+
+<!-- CURRICULUM -->
+<section id="curriculum" class="curriculum">
+  <div class="contenido-seccion">
+      <h2>Curriculum</h2>
+      <div class="fila">
+          <div class="col izquierda">
+              <h3>Educación</h3>
+              <div class="item izq">
+                  <h4>Educacion media completa</h4>
+                  <span class="casa">Colegio Nuevo Horizonte</span>
+                  <span class="fecha">2017 - 2021</span>
+                  <p></p>
+                  <div class="conectori">
+                      <div class="circuloi"></div>
+                  </div>
+              </div>
+              <div class="item izq">
+                  <h4>Universitaria</h4>
+                  <span class="casa">DUOC UC</span>
+                  <span class="fecha">2023 - Actualidad</span>
+                  <p></p>
+                  <div class="conectori">
+                      <div class="circuloi"></div>
+                  </div>
+              </div>
+              
+          </div>
+
+          <div class="col derecha">
+              <h3>Experiencia de trabajo</h3>
+              <div class="item der">
+                  <h4>Analista de Logistica</h4>
+                  <span class="casa">Mercado Libre</span>
+                  <span class="fecha">2022 - Actualidad</span>
+                  <p></p>
+                  <div class="conectord">
+                      <div class="circulod"></div>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+</section>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara" id="servicios">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla scelerisque, sem purus fringilla mauris, nec ultricies nisl nisl sit amet dolor. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">Java</span>
+            </div>
+          </div>
+          <!-- Articulos -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Artículos</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla scelerisque, sem purus fringilla mauris, nec ultricies nisl nisl sit amet dolor. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Escribir</span>
+              <span class="badge text-bg-primary">Editar</span>
+              <span class="badge text-bg-primary">Blogs</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Estudiante</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla scelerisque, sem purus fringilla mauris, nec ultricies nisl nisl sit amet dolor. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Desarrollo Web</span>
+              <span class="badge text-bg-primary">Python</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+      <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="./assets/img/proyecto1.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Taller Rayo MCqueen</p>
+                <div class="iconos-contenedor">
+                  <a href="https://am-rodriguezb.github.io/prueba1_progarmacionweb/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="./assets/img/proyecto2.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto GAME Dino</p>
+                <div class="iconos-contenedor">
+                  <a href="./dino.html" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="./assets/img/proyecto3.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 3</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="./assets/img/proyecto4.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 4</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="./assets/img/proyecto5.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 5</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="./assets/img/proyecto6.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 6</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/am-rodriguezb" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes...</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="./assets/img/cliente1.svg" alt="Foto de Gino">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Gino</p>
+                <p class="cargo">Gerente de proyectos en DesarrolloWeb</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="./assets/img/cliente2.svg" alt="Foto de Nora">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Nora</p>
+                <p class="cargo">Gerente de DiseñaMiPáginaWeb</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="./assets/img/cliente3.svg" alt="Foto de Leonardo">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Leonardo</p>
+                <p class="cargo">Director de AprendeAProgramar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="Email: amarorodriguez63@gmail.com">
+                <button type="button">  
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="./assets/img/icono-blanco.svg" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://am-rodriguezb.github/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/amaro-rodriguez-bernal-869a49241/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/alexspartan63/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto:amarorodriguez63@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Amaro Rodriguez B. (2024) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
